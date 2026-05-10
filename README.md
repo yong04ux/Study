@@ -1,6 +1,6 @@
 # GaokaoPilot
 
-GaokaoPilot 是一个高考志愿辅助 Demo，提供成绩分析、院校查询、志愿推荐、方案管理、报告查询和 RAG 问答能力。
+GaokaoPilot 是一个高考志愿辅助Agent，提供成绩分析、院校查询、志愿推荐、方案管理、报告查询和 RAG 问答能力。
 
 后端使用 `FastAPI + SQLAlchemy + LangGraph + MySQL + Redis + Kafka + Chroma`，前端使用 `React + TypeScript + Vite`。
 
