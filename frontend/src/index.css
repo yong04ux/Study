@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0f172a;
+  background:
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.12), transparent 22%),
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.10), transparent 20%),
+    linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+  font-family: "Avenir Next", "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-white/70 bg-[rgba(255,255,255,0.92)] p-5 shadow-soft backdrop-blur sm:p-6;
+  }
+
+  .page-shell {
+    @apply mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 pb-10 pt-5 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.22em] text-sky-700;
+  }
+
+  .section-title {
+    @apply text-2xl font-semibold text-slate-900 sm:text-3xl;
+  }
+
+  .field-grid {
+    @apply grid gap-4 md:grid-cols-2;
+  }
+}
